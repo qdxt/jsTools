@@ -22,7 +22,19 @@
  			alert:function(message){
  				//调用系统弹窗
  				window.alert(message);
- 			}
+ 			},
+			assert:function(value,msg){
+ 				//断言函数 测试传递进来的数据是否是真值
+ 				if(!value){
+ 					throw(msg||(value+"does not equal true"));
+				}
+			},
+			assertEqual:function(val1,val2,msg){
+				//测试传递进来的两个数值是否相等
+                if(val1!==val2){
+                    throw(msg||(val1+"does not equal "+val2));
+                }
+			}
  			// tab:function(nav,target,ele,className){
  			// 	// tab切换 nav 为点击按钮 target 为要切换的div元素 ele 为事件 className 为切换样式
  			// 	$(nav).on(ele,function(){
