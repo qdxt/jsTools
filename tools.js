@@ -34,6 +34,18 @@
                 if(val1!==val2){
                     throw(msg||(val1+"does not equal "+val2));
                 }
+			},
+			factorial:function(number){
+				//阶乘函数
+				if(number==1){
+					return number;
+				}else{
+					return number*this.factorial(number-1);
+				}
+
+			},
+			isArray:function(obj){
+					return Array.isArray(obj);
 			}
  			// tab:function(nav,target,ele,className){
  			// 	// tab切换 nav 为点击按钮 target 为要切换的div元素 ele 为事件 className 为切换样式
