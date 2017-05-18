@@ -59,6 +59,10 @@
 						throw('请注意您传进来的第一个参数不是数组');
 					}
 
+			},
+			arrayTostring:function(arr){
+				return arr.join();
+				// 也可以用toString() 方法
 			}
  			// tab:function(nav,target,ele,className){
  			// 	// tab切换 nav 为点击按钮 target 为要切换的div元素 ele 为事件 className 为切换样式
