@@ -46,6 +46,19 @@
 			},
 			isArray:function(obj){
 					return Array.isArray(obj);
+			},
+			indexOfArray:function(arr,value){
+					if(Array.isArray(arr)){
+						if(arr.indexOf(value.toString())){
+							return true;
+						}else{
+							return false;
+						}
+
+					}else{
+						throw('请注意您传进来的第一个参数不是数组');
+					}
+
 			}
  			// tab:function(nav,target,ele,className){
  			// 	// tab切换 nav 为点击按钮 target 为要切换的div元素 ele 为事件 className 为切换样式
